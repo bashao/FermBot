@@ -77,7 +77,7 @@ if __name__ == "__main__":
     # look in "/sys/bus/w1/devices/" after running
     #  sudo modprobe w1-gpio
     #  sudo modprobe w1-therm
-    tempcontrol = TempSensorController("28-00000589c320", 1)
+    tempcontrol = TempSensorController("28-00000xxxxxxx", 1)
 
     try:
         print("Starting temp sensor controller")
