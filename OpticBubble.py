@@ -17,7 +17,7 @@ from Logger import Logger
 class OpticBubble(Daemon):
     #Temp vars
     DEVICESDIR = "/sys/bus/w1/devices/"
-    TEMP_SENSOR_FILE = os.path.join(DEVICESDIR, "28-00000589c320", "w1_slave")
+    TEMP_SENSOR_FILE = os.path.join(DEVICESDIR, "28-00000xxxxxxx", "w1_slave")
 
     def __init__(self):
         Daemon.__init__(self, pidfile="OpticBubble_PID", stdout="bubble_stdout.txt", stderr="bubble_stderr.txt")
