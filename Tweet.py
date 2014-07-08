@@ -11,13 +11,14 @@ from Logger import Logger
 class Tweet(Daemon):
     #Temp vars
     DEVICESDIR = "/sys/bus/w1/devices/"
-    TEMP_SENSOR_FILE = os.path.join(DEVICESDIR, "28-00000589c320", "w1_slave")
+    TEMP_SENSOR_FILE = os.path.join(DEVICESDIR, "28-00000xxxxxxx", "w1_slave")
     
-    #Twitter vars
-    CONSUMER_KEY = '4lkRvu9zg9nrHVugrKFgA'
-    CONSUMER_SECRET = 'GDpaQoFzosMotIHKj3mtzynoUdb62FHVnJX8duiJqE'
-    ACCESS_KEY = '2233578056-FPx5WyOHvWgTJ5R51ZS29IjHTzYk2MLJfzwTVkQ'
-    ACCESS_SECRET = 'zkvovcP7HZcypsKoZQaugmdCC1IKaJTvBqL9sRHjnTZYi'
+    #Twitter vars   
+    CONSUMER_KEY = 'xxxxxxxxxxxxxxxxxxxxx'
+                       
+    CONSUMER_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    ACCESS_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    ACCESS_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     def __init__(self):
         Daemon.__init__(self, pidfile="Tweet_PID", stdout="tweet_stdout.txt", stderr="tweet_stderr.txt")
         self.twitter = Twython(Tweet.CONSUMER_KEY, Tweet.CONSUMER_SECRET, Tweet.ACCESS_KEY, Tweet.ACCESS_SECRET)
