@@ -9,3 +9,4 @@ There are three files in the project:
 * Tweet.py - A script that posts the bubbles every 15 minutes to twitter.
 * Runner.py - A script that will check that OpticBubble and Tweet are running and run them again if necessery.
 
+In order to run the system you need to have a raspberry pi with 
